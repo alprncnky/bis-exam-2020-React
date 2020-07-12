@@ -1,0 +1,336 @@
+.App {
+    height: 100%;
+}
+
+.select-portfolio-day {
+    width: 100%;
+    height: 100%;
+
+    .selectwon__control {
+        border: none;
+    }
+}
+
+
+.create-portfolio-container {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    text-align: center; 
+    transform: translate(-50%, -50%);
+
+    .top-text {
+        font-size: 18px;
+        font-weight: 500;
+        color: #2D809F;
+    }
+
+    .button-blue {
+        border: 0;
+        border-radius: 5px;
+        padding-top: 0.9em;
+        padding-bottom: 0.9em;
+        padding-left: 1.6em;
+        padding-right: 1.6em;
+        color: white;
+        font-size: 20px;
+        background-color: #2D809F;
+        cursor: pointer,
+    }
+}
+
+.label-green-rounded {
+    width: 15px;
+    height: 15px;
+    background-color: #76ce5b;
+    border-radius: 100px;
+}
+
+.label-blue-square {
+    width: 15px; 
+    height: 15px;
+    background-color: #56b0ce;
+}
+
+.not-found-graph {
+    margin-top: 150px;
+    color: grey;
+    text-align: center;
+}
+
+.detail-container {
+    justify-content: center;
+    height: 100%;
+    background-color: #F8F8F8;
+
+    .detail-width {
+        width: 500px;
+        margin-top: 120px;
+    }
+    .header-text {
+        font-weight: 500;
+        text-align: center;
+    }
+    .mr-top-30 {
+        margin-top: 30px;
+    }
+    .sub-header-text {
+        color: dimgrey;
+        margin: 0;
+        font-size: 12px;
+    }
+    .mr-top-5 {
+        margin-top: 5px;
+    }
+    .radio-container {
+        margin-right: 0;
+        margin-left: 0;
+        align-items: center;
+        font-size: 16px;
+        border: 1px solid lightgrey;
+        background-color: white;
+    }
+    .radio-colors {
+        border-right: solid 1px lightgrey;
+        background-color: #f6f8f9;
+    }
+    .radio-labels {
+        margin: 0,;
+        font-weight: 600;
+    }
+    .detail-inputs {
+        width: 100%;
+        padding: 6px;
+        font-size: 16px;
+        border: 1px solid lightgrey;
+        border-radius: 4px;
+        margin-top: 5px;
+    }
+}
+
+.portfolio-navigation-bar {
+    background-color: #F8F8F8;
+    position: fixed;
+    left: 0;
+    height: 70px;
+    width: 100%;
+}
+.top-bar {
+    display: block;
+    border-bottom: 1px solid #E7E7E7;
+    top: 0;
+
+    .close-btn {
+        margin-right: 20px;
+        margin-left: 20px;
+        align-self: center;
+        font-size: 40px;
+        float: right;
+        cursor: pointer;
+    }
+}
+.bottom-bar {
+    align-items: center;
+    display: flex;
+    border-top: 1px solid #E7E7E7;
+    bottom: 0;
+    padding: 5px;
+
+    .bottom-button {
+        border: 0px;
+        border-radius: 5px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .right-side-btn {
+        margin: auto 20px auto auto;
+        width: 220px;
+        color: white;
+    }
+    .left-side-btn {
+        width: 80px;
+        margin: auto auto auto 20px;
+        color: #646464;
+        background-color: #cccccc;
+    }
+}
+
+.definition-container {
+    justify-content: center;
+    height: auto;
+    min-height: 100%;
+    background-color: #F8F8F8;
+
+    .container-size {
+        width: 1000px;
+        margin-top: 120px;
+        margin-bottom: 100px;
+    }
+    .header-text {
+        font-weight: 500; 
+        text-align: center;
+    }
+    .layout-container {
+        height: 40px;
+        margin-left: 0;
+        margin-right: 0;
+        justify-content: space-between;
+
+        > div {
+            height: 40px;
+            border-radius: 4px;
+        }
+
+        .not-visible {
+            visibility: hidden;
+        }
+    }
+    .top-cntr {
+        margin-top: 20px;
+
+        > div {
+            display: flex; 
+            align-items: flex-end;
+            > h4 {
+                font-size: 14px; 
+                color: grey;
+            }
+        }
+    }
+    .body-cntr {
+        margin-bottom: 20px;
+
+        .div-align {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            > span {
+                color: white;
+            }
+
+            .text-and-label {
+                margin: 0;
+                margin-left: 10px;
+                margin-right: 10px;
+                font-weight: bold;
+                color: #424242;
+            }
+            .text-and-label::placeholder { /* Most modern browsers support this now. */
+                color: #9E9E9E;
+            }
+        }
+        .div-clickable {
+            cursor: pointer;
+        }
+        .def-inputs {
+            text-align: center;
+            background-color: transparent;
+            border: none;
+            color: #424242;
+            font-weight: bold;
+        }
+    }
+}
+
+.payroll-search-bar-container {
+    width: 35%;
+    height: 50px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+
+    input:focus {
+        border: solid 2px grey;
+        outline: none;
+    }
+
+    .payroll-search-input::placeholder {
+        text-align: center;
+        color: grey;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .payroll-search-input {
+        border: solid 1px lightgrey;
+        border-radius: 50px;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 10px;
+        width: -webkit-fill-available;
+        height: inherit;
+    }
+}
+
+.payroll-header-text {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.payroll-container {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+
+    > h2 {
+        text-align: center;
+    }
+}
+
+#payroll-users {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #payroll-users td, #payroll-users th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #payroll-users tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #payroll-users tr:hover {background-color: #ddd;}
+  
+  #payroll-users th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #b0bec5
+
+    ;
+    color: white;
+  }
+
+.sz-wd-40 {
+    width: 40px;
+}
+.sz-wd-50 {
+    width: 50px;
+}
+.sz-wd-70 {
+    width: 70px;
+}
+.sz-wd-600 {
+    width: 600px;
+}
+.sz-wd-650 {
+    width: 650px;
+}
+.sz-wd-1000 {
+    width: 1000px;
+}
+.sz-wd-y90 {
+    width: 90%;
+}
+.sz-wd-y100 {
+    width: 100%;
+}
